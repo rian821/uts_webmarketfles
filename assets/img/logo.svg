@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+    <defs>
+        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#38bdf8"/>
+            <stop offset="100%" stop-color="#0284c7"/>
+        </linearGradient>
+    </defs>
+    <!-- Hook & Wave Icon -->
+    <g transform="translate(10, 10)">
+        <circle cx="30" cy="30" r="28" fill="#0369a1" opacity="0.3"/>
+        <path d="M30 14 L30 38 A 12 12 0 0 1 12 34 L10 28" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+        <circle cx="30" cy="14" r="3" fill="#38bdf8"/>
+        <polygon points="10,28 7,30 11,25" fill="#38bdf8"/>
+        <path d="M 22 46 Q 30 40 38 46 T 50 46" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    </g>
+    <!-- Brand Name -->
+    <text x="75" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="1">STRIKE<tspan fill="#38bdf8">ZONE</tspan></text>
+    <text x="76" y="55" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="3">FISHING TACKLE</text>
+</svg>

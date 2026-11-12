@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+    <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1e3e62"/>
+            <stop offset="100%" stop-color="#0b192c"/>
+        </linearGradient>
+        <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        </pattern>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="500" height="500" rx="24" fill="url(#bgGrad)"/>
+    <rect width="500" height="500" rx="24" fill="url(#gridPattern)"/>
+
+    <!-- Subtle Center Glow -->
+    <circle cx="250" cy="240" r="180" fill="url(#glowGrad)"/>
+
+    <!-- Brand Badge Top Right -->
+    <rect x="340" y="24" width="130" height="32" rx="16" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="405" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">STRIKEZONE</text>
+
+    <!-- Category Pill Top Left -->
+    <rect x="30" y="24" width="150" height="32" rx="16" fill="#0ea5e9" opacity="0.2"/>
+    <rect x="30" y="24" width="150" height="32" rx="16" fill="none" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="105" y="45" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#0ea5e9" text-anchor="middle" letter-spacing="1">FISHING GEAR</text>
+
+    <!-- Main Graphic Centerpiece -->
+    <g filter="url(#shadow)">
+        
+            <!-- Fishing Rod Graphic -->
+            <path d="M120 380 L380 120" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round"/>
+            <path d="M120 380 L160 340" stroke="#f1f5f9" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="150" cy="350" r="10" fill="#0ea5e9"/>
+            <circle cx="210" cy="290" r="7" stroke="#0ea5e9" stroke-width="3" fill="none"/>
+            <circle cx="270" cy="230" r="6" stroke="#0ea5e9" stroke-width="3" fill="none"/>
+            <circle cx="330" cy="170" r="5" stroke="#0ea5e9" stroke-width="2.5" fill="none"/>
+            <circle cx="380" cy="120" r="4" fill="#ffffff"/>
+            <path d="M150 350 Q 250 300 380 120" stroke="rgba(255,255,255,0.4)" stroke-dasharray="4,4" stroke-width="2" fill="none"/>
+            
+    </g>
+
+    <!-- Bottom Product Info Overlay -->
+    <rect x="25" y="405" width="450" height="70" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="45" y="433" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" fill="#ffffff" letter-spacing="0.5">STRIKEZONE TACKLE</text>
+    <text x="45" y="457" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#0ea5e9">Peralatan Pancing Original Bergaransi</text>
+
+    <!-- Water Waves Accent -->
+    <path d="M 370 445 Q 390 435 410 445 T 450 445" fill="none" stroke="#0ea5e9" stroke-width="2.5" opacity="0.7"/>
+</svg>
